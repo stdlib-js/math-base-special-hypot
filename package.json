@@ -1,0 +1,39 @@
+{
+  "name": "@stdlib/math-base-special-hypot",
+  "version": "0.0.0",
+  "description": "Compute the hypotenuse avoiding overflow and underflow.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-hypot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "math",
+    "mathematics",
+    "euclid",
+    "euclidean",
+    "hypotenuse",
+    "geometry",
+    "hypot",
+    "triangle",
+    "pythagoras",
+    "pythagorean theorem",
+    "trigonometry",
+    "trig",
+    "double-precision",
+    "double",
+    "dbl"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
