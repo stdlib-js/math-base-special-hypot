@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-hypot
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@esm/index.mjs';
+var hypot = require( '@stdlib/math-base-special-hypot' );
 ```
 
 #### hypot( x, y )
@@ -79,7 +95,7 @@ h = hypot( 5.0, NaN );
 -   The textbook approach to calculating the hypotenuse is subject to overflow and underflow. For example, for a sufficiently large `x` and/or `y`, computing the hypotenuse will overflow.
 
     ```javascript
-    import sqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt@esm/index.mjs';
+    var sqrt = require( '@stdlib/math-base-special-sqrt' );
 
     var x2 = 1.0e154 * 1.0e154;
     // returns 1.0e308
@@ -91,7 +107,7 @@ h = hypot( 5.0, NaN );
     Similarly, for sufficiently small `x` and/or `y`, computing the hypotenuse will underflow.
 
     ```javascript
-    import sqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt@esm/index.mjs';
+    var sqrt = require( '@stdlib/math-base-special-sqrt' );
 
     var x2 = 1.0e-200 * 1.0e-200;
     // returns 0.0
@@ -122,15 +138,10 @@ h = hypot( 5.0, NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var hypot = require( '@stdlib/math-base-special-hypot' );
 
 var x;
 var y;
@@ -143,10 +154,6 @@ for ( i = 0; i < 100; i++ ) {
     h = hypot( x, y );
     console.log( 'h(%d,%d) = %d', x, y, h );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -155,7 +162,89 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/hypot.h
+```
+
+#### stdlib_base_hypot( x, y )
+
+Computes the hypotenuse avoiding overflow and underflow.
+
+```c
+double h = stdlib_base_hypot( 5.0, 12.0 );
+// returns 13.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **y**: `[in] double` input value.
+
+```c
+double stdlib_base_hypot( const double x, const double y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/hypot.h"
+#include <stdio.h>
+
+int main() {
+    double x[] = { 3.0, 4.0, 5.0, 12.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i += 2 ) {
+        y = stdlib_base_hypot( x[ i ], x[ i+1 ] );
+        printf( "hypot(%lf, %lf) = %lf\n", x[ i ], x[ i+1 ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -182,7 +271,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -242,7 +331,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-hypot/main/LICENSE
 
-[hypotenuse]: http://en.wikipedia.org/wiki/Pythagorean_theorem
+[hypotenuse]: https://en.wikipedia.org/wiki/Pythagorean_theorem
 
 </section>
 
