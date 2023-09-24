@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@deno/mod.js';
+import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@v0.1.0-deno/mod.js';
 ```
 
 #### hypot( x, y )
@@ -136,7 +136,7 @@ h = hypot( 5.0, NaN );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@deno/mod.js';
+import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@v0.1.0-deno/mod.js';
 
 var x;
 var y;
