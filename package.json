@@ -44,7 +44,7 @@
     "@stdlib/math-base-assert-is-infinite": "^0.1.1",
     "@stdlib/math-base-assert-is-nan": "^0.1.1",
     "@stdlib/math-base-napi-binary": "^0.1.0",
-    "@stdlib/math-base-special-sqrt": "^0.1.0",
+    "@stdlib/math-base-special-sqrt": "^0.1.1",
     "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "@stdlib/constants-float64-eps": "^0.1.1",
     "@stdlib/constants-float64-ninf": "^0.1.1",
     "@stdlib/math-base-assert-is-positive-zero": "^0.1.1",
-    "@stdlib/math-base-special-abs": "^0.1.0",
+    "@stdlib/math-base-special-abs": "^0.1.1",
     "@stdlib/math-base-special-pow": "^0.1.0",
     "@stdlib/math-base-special-round": "^0.1.1",
     "@stdlib/random-base-randu": "^0.1.0",
