@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-04-02)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`0dc5e1f`](https://github.com/stdlib-js/stdlib/commit/0dc5e1f8a98e82310a309649f58a0dc3acfedb68) - update `hypot` to follow the IEEE 754-2019 standard [(#6509)](https://github.com/stdlib-js/stdlib/pull/6509)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`0dc5e1f`](https://github.com/stdlib-js/stdlib/commit/0dc5e1f8a98e82310a309649f58a0dc3acfedb68) - **fix:** update `hypot` to follow the IEEE 754-2019 standard [(#6509)](https://github.com/stdlib-js/stdlib/pull/6509) _(by Karan Anand)_
 -   [`0900838`](https://github.com/stdlib-js/stdlib/commit/090083855a65254591477cb58966d7b232f3c365) - **refactor:** update `math/base/special/hypot` to follow latest project conventions [(#4765)](https://github.com/stdlib-js/stdlib/pull/4765) _(by Vivek Maurya, Athan Reines)_
 -   [`9e689ff`](https://github.com/stdlib-js/stdlib/commit/9e689ffcb7c6223afc521f1e574b42f10921cf5e) - **chore:** fix indentation in manifest.json files _(by Philipp Burckhardt)_
 
@@ -25,9 +36,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Karan Anand
 -   Philipp Burckhardt
 -   Vivek Maurya
 
