@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-hypot/tags). For example,
+
+```javascript
 import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@v0.2.3-esm/index.mjs';
 ```
 
@@ -141,7 +146,7 @@ h = hypot( 5.0, NaN );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@v0.2.3-esm/index.mjs';
+import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
