@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@deno/mod.js';
+import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@v0.2.3-deno/mod.js';
 ```
 
 #### hypot( x, y )
@@ -136,7 +136,7 @@ h = hypot( 5.0, NaN );
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@deno/mod.js';
+import hypot from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-hypot@v0.2.3-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
